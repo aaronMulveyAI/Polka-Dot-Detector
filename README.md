@@ -138,13 +138,15 @@ The GUI provides an interface to predict unseen images. A simple sign function i
 ```python
 prediction = np.sign(0.5 * features[0] + 0.5 * features[1] - 0.5)
 ```
-![Prediction Interface]("https://raw.githubusercontent.com/aaronMulveyAI/Polka-Dot-Detector/main/images/Prediction.png")
+![Prediction Interface](https://raw.githubusercontent.com/aaronMulveyAI/Polka-Dot-Detector/main/images/Prediction.png)
+
 
 #### Results:
 - If the prediction result is `-1`, the image is classified as **Dysplastic Nevi**.
 - Otherwise, it is classified as **Spitz Nevus**.
 
-![Prediction Result]("https://raw.githubusercontent.com/aaronMulveyAI/Polka-Dot-Detector/main/images/Class1.png")
+![Prediction Result](https://raw.githubusercontent.com/aaronMulveyAI/Polka-Dot-Detector/main/images/Class1.png)
+
 
 ---
 
