@@ -97,7 +97,8 @@ The system generates three key visualizations:
 
 
 
-![Loss Function]("https://github.com/aaronMulveyAI/Polka-Dot-Detector/blob/main/images/Loss.png")
+![Loss Function](https://raw.githubusercontent.com/aaronMulveyAI/Polka-Dot-Detector/main/images/Loss.png)
+
 
 #### c) **Optimal Hyperplane**
 - A normalized feature space with the optimal hyperplane plotted.
@@ -137,13 +138,13 @@ The GUI provides an interface to predict unseen images. A simple sign function i
 ```python
 prediction = np.sign(0.5 * features[0] + 0.5 * features[1] - 0.5)
 ```
+![Prediction Interface]("https://raw.githubusercontent.com/aaronMulveyAI/Polka-Dot-Detector/blob/main/images/Prediction.png")
 
 #### Results:
 - If the prediction result is `-1`, the image is classified as **Dysplastic Nevi**.
 - Otherwise, it is classified as **Spitz Nevus**.
 
-![Prediction Interface]("https://github.com/aaronMulveyAI/Polka-Dot-Detector/blob/main/images/Prediction.png")
-![Prediction Result]("https://github.com/aaronMulveyAI/Polka-Dot-Detector/blob/main/images/Class1.png")
+![Prediction Result]("https://raw.githubusercontent.com/aaronMulveyAI/Polka-Dot-Detector/blob/main/images/Class1.png")
 
 ---
 
