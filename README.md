@@ -154,7 +154,7 @@ Polka Dot Detector/
 │   │   ├── dysplasticNevi/
 │   │   └── spitzNevus/
 ├── FeatureExtraction.py
-├── main.py
+├── PolkaDotDetectorApp.py
 └── README.md
 ```
 - **data/**: Contains the image dataset.
