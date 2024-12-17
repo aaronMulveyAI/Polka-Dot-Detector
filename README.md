@@ -64,6 +64,7 @@ For each image, the **RGB features** are extracted using a mask applied to grays
 2. Apply the Otsu threshold to generate a binary mask.
 3. Use the mask to compute the mean of the **R**, **G**, and **B** channels.
 
+
 Code (located in `FeatureExtraction.py`):
 ```python
 class FeatureExtraction:
@@ -89,18 +90,20 @@ The system generates three key visualizations:
 - A 3D scatter plot of the RGB features of all images.
 - Red points represent **Spitz Nevus**; black points represent **Dysplastic Nevi**.
 
-![Feature Space]("<link to image 1>")
+![Feature Space](https://github.com/aaronMulveyAI/Polka-Dot-Detector/blob/main/images/features.gif?raw=true)
 
 #### b) **Loss Function**
 - A 3D surface plot showing a quadratic loss function based on two weights (`w1`, `w2`).
 
-![Loss Function]("<link to image 2>")
+
+
+![Loss Function]("https://github.com/aaronMulveyAI/Polka-Dot-Detector/blob/main/images/Loss.png")
 
 #### c) **Optimal Hyperplane**
 - A normalized feature space with the optimal hyperplane plotted.
 - The hyperplane separates the two classes using linear algebra.
 
-![Optimal Hyperplane]("<link to image 3>")
+![Optimal Hyperplane](https://github.com/aaronMulveyAI/Polka-Dot-Detector/blob/main/images/hyperplane.gif?raw=true)
 
 ---
 
@@ -139,8 +142,8 @@ prediction = np.sign(0.5 * features[0] + 0.5 * features[1] - 0.5)
 - If the prediction result is `-1`, the image is classified as **Dysplastic Nevi**.
 - Otherwise, it is classified as **Spitz Nevus**.
 
-![Prediction Interface]("<link to image 4>")
-![Prediction Result]("<link to image 5>")
+![Prediction Interface]("https://github.com/aaronMulveyAI/Polka-Dot-Detector/blob/main/images/Prediction.png")
+![Prediction Result]("https://github.com/aaronMulveyAI/Polka-Dot-Detector/blob/main/images/Class1.png")
 
 ---
 
@@ -168,9 +171,9 @@ Polka Dot Detector/
 
 1. Install the required dependencies (see below).
 2. Ensure the dataset folder is structured correctly.
-3. Run the `main.py` script:
+3. Run the `PolkaDotDetectorApp.py` script:
    ```bash
-   python main.py
+   python PolkaDotDetectorApp.py
    ```
 
 ---
@@ -182,24 +185,6 @@ Install the following Python libraries:
 pip install numpy opencv-python-headless matplotlib scikit-learn pillow
 ```
 
----
-
-## Screenshots
-
-### Feature Space
-![Feature Space]("<link to image 1>")
-
-### Loss Function
-![Loss Function]("<link to image 2>")
-
-### Optimal Hyperplane
-![Optimal Hyperplane]("<link to image 3>")
-
-### Prediction Interface
-![Prediction Interface]("<link to image 4>")
-
-### Prediction Result
-![Prediction Result]("<link to image 5>")
 
 ---
 
@@ -209,5 +194,3 @@ pip install numpy opencv-python-headless matplotlib scikit-learn pillow
 
 ---
 
-## License
-This project is provided under the MIT License.
