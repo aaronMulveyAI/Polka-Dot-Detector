@@ -175,6 +175,7 @@ Polka Dot Detector/
 1. Install the required dependencies (see below).
 2. Ensure the dataset folder is structured correctly.
 3. Run the `PolkaDotDetectorApp.py` script:
+   
    ```bash
    python PolkaDotDetectorApp.py
    ```
